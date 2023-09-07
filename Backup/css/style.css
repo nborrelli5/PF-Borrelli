@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { /* etiqueta raíz */
+    font-size: 62.5%;
+}
+
+@font-face{
+    font-family: 'Lemon-milk';
+    src: url(../fonts/LEMONMILK-Regular.otf);
+}
+
+/*----------------------------------INDEX----------------------------------*/
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1{
+    color: whitesmoke;
+    font-family:'Lemon-milk';
+    font-weight: bolder;
+    -webkit-text-stroke: 1.3px #000000;
+    font-size: 5rem;
+    position: relative;
+    top: 65px;
+    left: -100px;
+    background: transparent;
+    width: 400px;
+    display: inline;
+}
+/*----------NAV-------------------*/
+nav{background-color: #1c1b21;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.div-nav{
+    display: inline;
+    height: 100px;
+    width: 1440px;
+}
+
+.logo-header{
+    display: inline;
+    height: 70px;
+    margin-left: 25px;
+}
+
+.menu-activo {
+    color: #8a5fc5d3;
+    text-decoration: underline ;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+li a:hover {
+    background-color: #8a5fc5d3;
+    color: aliceblue;
+}
+
+ul{
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    left: 350px;
+}
+
+.nav-ul li{
+    list-style: none;
+    display: inline;
+    font-family:'Lemon-milk';
+}
+
+
+.letras-menu{
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.div-user{
+    display: inline-block;
+}
+
+.user{
+    height: 50px;
+    position: absolute;
+    right: 25px;
+    bottom: 19px;
+}
+
+/*----------BODY-------------------*/
+body{
+    background-color: black;
+    position: relative;
+}
+
+.h2-banner{
+    color: aliceblue;
+    font-family: 'Lemon-milk';
+    -webkit-text-stroke: 0.1px #280842;
+    font-size: 2rem;
+    position: relative;
+    top: 130px;
+    left: -400px;
+    background: transparent;
+    width: 400px;
+    display: inline;
+}
+
+.banner-home{
+    height: 300px;
+    width: auto;
+    background-image: url(../img/banner2.png);
+    background-repeat: no-repeat;
+    background-size: 1652px ;
+    margin-left: 200px;
+}
+
+.menu-lateral{
+    display: inline;
+    height: 63%;
+    width: 300px;
+    margin-left: 25px;
+    background-color: #1c1b21;
+    position:absolute;
+    bottom: 175px;
+}
+
+.side-bar{
+    width: 300px;
+}
+
+.img{
+    display: inline;
+    width: auto;
+    padding: 1px;
+    margin-left: 450px;
+}
+
+/*----------section--------------------*/
+.section{
+    height: 700px;
+    width: auto;
+}
+/*----------FOOTER-------------------*/
+
+.div-redes{
+    height: 150px;
+    width: auto;
+    padding: 20px;
+    border-top: solid 1px #8a5fc5d3;
+    background-color: #1c1b21;
+}
+
+.footer{
+    display: inline;
+    color: #8a5fc5d3;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.texto-redes{
+    text-align: center;
+    text-justify: auto;
+}
+.redes{
+    width: 50px;
+}
+/*----------------------------------NUESTROS TRABAJOS----------------------------------*/
+h2{
+    font-size: 3rem;
+    font-family: 'Lemon-milk';
+    color: aliceblue;
+    padding: 30px;
+}
+
+iframe{
+    margin: 10px 200px;
+}
+
+
+/*----------------------------------CONTACTO----------------------------------*/
+
+form{
+    width: 100%;
+    text-align: end;
+    padding: 10rem;     
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    text-align: end;
+    background-image:url(../img/bust1.png);
+    background-repeat: no-repeat;
+    background-position: 350px;
+    background-size: 400px
+}
+form input{
+    width:50%;
+    background-color:rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+    border-color:#7840b99a;
+    color: #b7b2bbe7;
+}
+form input::placeholder{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form #comentarios{
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    background-color:rgba(0, 0, 0, 0.8);
+    border-color:#7840b99a;
+    color: #b7b2bbe7;
+}
+
+form textarea::placeholder{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+form #enviar{
+    width: 50%;
+    color: rgba(245, 245, 245, 0.692);
+    background-color: rgba(99, 47, 148, 0.897);
+    font-family:'Lemon-milk';
+    font-size: 2rem;
+    border-color: rgb(147, 60, 218);
+    border-width:thin;
+    padding: 10px;
+    text-align: center;
+}
+
+/*------Whatsapp--------*/
+
+.whatsapp {
+    width: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
+
