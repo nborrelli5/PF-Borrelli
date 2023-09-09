@@ -8,34 +8,76 @@
     <title>Nuestros Trabajos-Capybara</title>
 </head>
 <body>
-    <header id="id-encabezado">  
-        <a href="../index.html">
-            <img src="../img/logo2.png" class="logo-header">  
-        </a>  
-        <nav>
-            <div class="div-nav">
-                <ul class="nav-ul">           
-                    <li>
-                        <a href="../index.html" id="home" class="letras-menu">Home</a>
-                    </li>
-                    <li>
-                        <a href="categorias.html" id="categorias" class="letras-menu">Categorias</a>
-                    </li>
-                    <li>
-                        <a href="ofertas.html" id ="Ofertas" class="letras-menu">Ofertas</a>
-                    </li>
-                    <li>
-                        <a href="nuestros-trabajos.html" id="Trabajos" class="menu-activo">Nuestros Trabajos</a>
-                    </li>   
-                    <li>
-                        <a href="contacto.html" id="contacto" class="letras-menu">Contacto</a>
-                    </li>
-                </ul>
-                <div class="div-user">
-                    <img src="../img/user2.png" class="user">
-                </div>
+    <header>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="../img/logo2.png" class="header__logo__img"> 
+        </div>
+        <div class="header__nav-search">
+            <div class="header__search">        
+                <input type="search" name="search" placeholder="buscar...">
+                <button class="header__search__loupe">
+                    <img src="../img/loupe_w.png" alt="loupe">
+                </button>
             </div>
+            <nav>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="../index.html" id="home" class="header__nav">Home</a>
+                        </li>
+                    </ul>
+                </div>            
+                <div>
+                    <ul>
+                    <li>
+                        <a href="../pages/ofertas.html" id="home" class="header__nav">Ofertas</a>
+                    </li>
+                    </ul>
+                </div>            
+                <div>
+                    <ul>
+                        <li>
+                            <a href="../pages/categorias.html" id="home" class="header__nav">Categorías</a>
+                        </li>
+                    </ul>
+                </div>        
+                <div>
+                    <ul>
+                        <li>
+                            <a href="../pages/nuestros-trabajos.html" id="home" class="header__nav__active">Nuestros Trabajos</a>
+                        </li>
+                    </ul>
+                </div>            
+                <div>
+                    <ul>
+                        <li>
+                            <a href="../pages/contacto.html" id="home" class="header__nav">contacto</a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
+
+        </div>
+        <div class="header__favs-cart">
+            <a href="../pages/categorias.html">
+                <img src="../img/heart_W.png" alt="">
+            </a>
+            <a href="../pages/categorias.html">
+                <img src="../img/shopping-cart_W.png" alt="">
+            </a>
+        </div>
+        <div class="header__login">
+            <div class="header__login__name">
+                <p>Capybara User                   
+                </p>            
+            </div>
+            <div class="header__login__img">
+                <a href="../pages/categorias.html">
+                    <img src="../img/user.png" alt="login-img">
+                </a>
+            </div>
+        </div>
     </header>
 
     <section class="banner-home">
@@ -53,20 +95,34 @@
         </div>
     </section>
     <section class="section-fotos">
-        <div >
-            <h2>Fotos</h2>
+        <h2>Fotos</h2>
+        <div id="x" class="body__photo__gallery">
+            <div class="photo1"></div>
+            <div class="photo2"></div>
+            <div class="photo3"></div>
+            <div class="photo4"></div>
+            <div class="photo5"></div>
+            <div class="photo6"></div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="div-redes">
-            <p class="texto-redes"> Seguinos en nuestras redes </p>
-            <img src="../img/redes-sociales/face.png" class="redes">
-            <img src="../img/redes-sociales/Instagram.png" class="redes">
-            <img src="../img/redes-sociales/twitter.png" class="redes">
+    <footer>
+        <div class="footer__social">
+            <p class="footer__social__p"> Seguinos en nuestras redes </p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="../img/redes-sociales/face.png" class="footer__social__icons">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="../img/redes-sociales/instagram.png" class="footer__social__icons">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="../img/redes-sociales/x.png" class="footer__social__icons">
+            </a>
+            <a href="https://reddit.com" target="_blank">
+                <img src="../img/redes-sociales/reddit.png" class="footer__social__icons">
+            </a>
             <p> Capybara 3D - Todos los derechos reservados 2023</p>
         </div>
-        
     </footer>
 </body>
 </html>

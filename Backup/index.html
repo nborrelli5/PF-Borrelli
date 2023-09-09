@@ -5,73 +5,371 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/Carpincho.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Capybara 3D</title>
 </head>
 <body>
-    <header id="id-encabezado">
-        <a href="index.html">
-            <img src="img/logo2.png" class="logo-header">  
-        </a>
-        <nav id="nav">
-            <div class="div-nav">
-                <ul class="nav-ul">           
+    <header>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="img/logo2.png" class="header__logo__img"> 
+        </div>
+        <div class="header__nav-search">
+            <div class="header__search">        
+                <input type="search" name="search" placeholder="buscar...">
+                <button class="header__search__loupe">
+                    <img src="img/loupe_w.png" alt="loupe">
+                </button>
+            </div>
+            <nav>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="index.html" id="home" class="header__nav__active">Home</a>
+                        </li>
+                    </ul>
+                </div>            
+                <div>
+                    <ul>
                     <li>
-                        <a href="index.html" id="home" class="menu-activo">Home</a>
+                        <a href="pages/ofertas.html" id="home" class="header__nav">Ofertas</a>
                     </li>
+                    </ul>
+                </div>            
+                <div>
+                    <ul>
+                        <li>
+                            <a href="pages/categorias.html" id="home" class="header__nav">Categorías</a>
+                        </li>
+                    </ul>
+                </div>        
+                <div>
+                    <ul>
+                        <li>
+                            <a href="pages/nuestros-trabajos.html" id="home" class="header__nav">Nuestros Trabajos</a>
+                        </li>
+                    </ul>
+                </div>            
+                <div>
+                    <ul>
+                        <li>
+                            <a href="pages/contacto.html" id="home" class="header__nav">contacto</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
 
-                    <li>
-                        <a href="pages/categorias.html" id="categorias" class="letras-menu">Categorias</a>
-                    </li>
+        </div>
+        <div class="header__favs-cart">
+            <a href="pages/categorias.html">
+                <img src="img/heart_W.png" alt="">
+            </a>
+            <a href="pages/categorias.html">
+                <img src="img/shopping-cart_W.png" alt="">
+            </a>
+        </div>
+        <div class="header__login">
+            <div class="header__login__name">
+                <p>Capybara User                   
+                </p>            
+            </div>
+            <div class="header__login__img">
+                <a href="pages/categorias.html">
+                    <img src="img/user.png" alt="login-img">
+                </a>
+            </div>
+        </div>
+    </header>
 
-                    <li>
-                        <a href="pages/ofertas.html" id ="Ofertas" class="letras-menu">Ofertas</a>
-                    </li>
+    <main>
+        <section class="banner-home">
+            <h1>
+                BIENVENIDO A <br> CAPYBARA
+            </h1>
+        </section>
 
-                    <li>
-                        <a href="pages/nuestros-trabajos.html" id="Trabajos" class="letras-menu">Nuestros Trabajos</a>
-                    </li>   
+        <div class="main">
+            <aside class="main__side-menu">
+                <div class="main__side-menu__categories">
+                    <div class="main__side-menu__title">
+                        <h3>Categorías
+                        </h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="pages/categorias.html" target="_blank">Destacados</a>
+                        </li>
+                        <li>
+                            <a href="pages/categorias.html" target="_blank">Figuras Coleccionables</a>
+                        </li>
+                        <li>
+                            <a href="pages/categorias.html" target="_blank">Miniaturas</a>
+                        </li>
+                        <li>
+                            <a href="pages/categorias.html" target="_blank">Bustos</a>
+                        </li>
+                        <li>
+                            <a href="pages/categorias.html" target="_blank">Dioramas y escenografías</a>
+                        </li>
+                        <li>
+                            <a href="pages/categorias.html" target="_blank">Juegos y juguetes</a>
+                        </li>
+                        <li>
+                            <a href="pages/categorias.html" target="_blank">Cosplay y utilería</a>
+                        </li>
+                        <li>
+                            <a href="pages/categorias.html" target="_blank">Decoración para el hogar</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
 
-                    <li>
-                        <a href="pages/contacto.html" id="contacto" class="letras-menu">Contacto</a>
-                    </li>
-                </ul>
-                <div class="div-user">
-                    <img src="img/user2.png" class="user">
+            <section class="main__products">    
+                <div class="main__products__line">
+                    <div class="main__products__line__header">
+                        <div class="main__products__line__header__title">
+                            <h3>Destacados</h3>
+                        </div>
+                        <div class="main__products__line__header__more">
+                            <a href="pages/categorias.html">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="main__products__item">
+                        <div>
+                            <a href="pages/categorias.html">
+                                <img class="main__products__item__img" src="img/content/Destacados1.png" alt="">
+                            </a>    
+                        </div>
+                        <div>
+                            <a href="pages/categorias.html">
+                                <img class="main__products__item__img" src="img/content/Destacados2.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="pages/categorias.html">
+                                <img class="main__products__item__img" src="img/content/Destacados3.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="pages/categorias.html">
+                                <img class="main__products__item__img" src="img/content/Destacados4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+<!-- Carousel Bootstrap -->
+                        <div class="main__products__line__header">
+                            <div class="main__products__line__header__title">
+                                <h3>Destacados</h3>
+                            </div>
+                            <div class="main__products__line__header__more">
+                                <a href="pages/categorias.html">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="main__products__item">
+<!-- carousel -->
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="cards-wrapper">
+            <div class="card">
+                <img src="img/nuestros-trabajos/witcher-small.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
                 </div>
             </div>
-        </nav>
-        
 
-    </header>
-    <section class="banner-home">
-        <h1>
-            BIENVENIDO A <br> CAPYBARA
-        </h1>
-        <h2 class="h2-banner">El Multiverso de impresiones 3D</h2>
-    </section>
-    <section>
-        <div class="menu-lateral">
-            <img src="img/side-bar.png" class="side-bar"> <!--reemplazar img por Lista ul --> 
+            <div class="card">
+                <img src="img/nuestros-trabajos/orig/ent.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/nuestros-trabajos/orig/gimli-medium.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/nuestros-trabajos/orig/busts-small.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
         </div>
-            <img src="img/destacados.png"class="img"> <!--reemplazar img por enlaces / vista carruosel --> 
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+            <div class="card">
+                <img src="img/nuestros-trabajos/orig/ent.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/nuestros-trabajos/orig/gimli-medium.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/nuestros-trabajos/orig/busts-small.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/nuestros-trabajos/orig/witcher-small.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
         </div>
-            <img src="img/figuras-prints.png"class="img">
+      </div>
+
+      <div class="carousel-item">
+        <div class="cards-wrapper">
+            <div class="card">
+                <img src="img/nuestros-trabajos/witcher-small.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/nuestros-trabajos/orig/ent.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="img/nuestros-trabajos/orig/gimli-medium.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/nuestros-trabajos/orig/busts-small.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text.</p>
+                </div>
+            </div>
         </div>
-    </section>
-    <!-- Whatsapp fixed -->
-    <a href="pages/contacto.html">
-        <img src="img/redes-sociales/whatsapp.png" alt="logo whatsapp" class="whatsapp">
-    </a>
-    <footer class="footer">
-        <div class="div-redes">
-            <p class="texto-redes"> Seguinos en nuestras redes </p>
-            <img src="img/redes-sociales/face.png" class="redes">        <!--ingresar enlaces--> 
-            <img src="img/redes-sociales/Instagram.png" class="redes">
-            <img src="img/redes-sociales/twitter.png" class="redes">
-            <p> Capybara 3D - Todos los derechos reservados 2023</p>
-        </div>
-        
-    </footer>
+      </div>
+     
     
+
+
+
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+<!-- fin carousel -->
+
+
+<!--  -->
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- WhatsApp fixed -->
+    <a href="pages/contacto.html">
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/541123534621" target="_blank" >
+            <img alt="Chat on WhatsApp" src="img/redes-sociales/whatsapp.png" class="whatsapp"/>
+        <a />
+    </a>
+
+
+    <footer>
+        <div class="footer__social">
+            <p class="footer__social__p"> Seguinos en nuestras redes </p>
+            <a href="https://facebook.com" target="_blank">
+                <img src="img/redes-sociales/face.png" class="footer__social__icons">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="img/redes-sociales/instagram.png" class="footer__social__icons">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="img/redes-sociales/x.png" class="footer__social__icons">
+            </a>
+            <a href="https://reddit.com" target="_blank">
+                <img src="img/redes-sociales/reddit.png" class="footer__social__icons">
+            </a>
+            <p> Capybara 3D - Todos los derechos reservados 2023</p>
+        </div>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- PENDIENTES
+
+-root CSS
+
+
+NAV-------------------------
+
+
+INDEX--------------------------
+Mejorar Banner 
+Categorías con pseudo clases 
+Carousel
+imágenes aumentadas con click
+
+CATEGORÍAS-------------------------
+galería con pseudo clases
+imágenes aumentadas con click
+
+
+OFERTAS-------------------------
+galería con pseudo clases 
+imágenes aumentadas con click
+cards con descuentos
+
+NUESTROS TRABAJOS-------------------------
+
+
+CONTACTO-------------------------
+agregar flexbox 
+
+-->
