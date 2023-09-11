@@ -175,7 +175,6 @@ body{
     flex-direction: row;
     align-content: stretch;
     background-color: #1c1b21;
-
 }
 
 /*--------------side menu--------------*/
@@ -234,6 +233,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: #1c1b21;
+    margin-bottom: 30px;
 }
 .main__products__line{
     display: flex;
@@ -265,10 +265,7 @@ body{
 }
 .main__products__item{
     display: flex;
-    gap: 10px;
-    padding: 0rem 0rem 4rem;
-    flex-wrap: nowrap;
-
+    flex-wrap: wrap;
 }
 .main__products__item__img{
     width: 250px;
@@ -284,22 +281,26 @@ body{
 .cards-wrapper{
     display: flex;
     overflow: hidden;
-    width: calc(100%/0.9);
+    width: calc(100%/0.95);
+    gap: 20px;
 }
-.card{
-    margin: 0 10px;
-    width: 100%;
+.card{  
+    width:auto;
     border: none;
-    position: relative;
+    background-color: #1c1b21;
 }
 .card-img-top{
-    height: 239px;
-    ;
+    max-height: 250px;
+    max-width: 250px;
+    width: auto;
+    height: auto;
 }
 .card-body{
     background-color: #000000ab;
+    background-color: #8a5fc575;
     position: absolute;
     bottom: 0px;
+    max-width: 250px;
     width: 100%;
     color: #ffffff;
 }
@@ -311,19 +312,15 @@ body{
     opacity: 1;
     background-color: #0000008a;
     width: 40px;
-    height: 100%;
-    margin-left: 10px;
+    max-height: 100%;
 }
 .carousel-control-next{
     justify-content: center;
     opacity: 1;
-    background-color: #000000de;
+    background-color: #0000008a;
     width: 40px;
     height: 100%;
-
 }
-
-
 /*--------------section--------------*/
 .section{
     height: 700px;
@@ -466,6 +463,7 @@ font-size: 35px;
 margin: 0 8px;
 background-color: #280842;
 background-image: linear-gradient(45deg, #8a5fc5d3, #672d6e);
+background-clip:0;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; 
 -moz-background-clip: text;
@@ -473,3 +471,22 @@ background-image: linear-gradient(45deg, #8a5fc5d3, #672d6e);
 }
 
 /*----------------------------------RESPONSIVE----------------------------------*/
+
+/*---Product Lines---*/
+
+@media (max-width: 1200px) {
+    .cards-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .carousel-control-next{
+        position: right;
+    }
+}
+
+
+
