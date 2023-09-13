@@ -37,110 +37,7 @@ h1{
     display: inline;
 }
 /*--------------NAV-------------------*/
-header{
-    width: 100%;
-    height: 12rem;
-    background-color: #1c1b21;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.header__logo__img{
-    width: 20rem;
-    margin-left: 4rem;
-}
-
-.header__nav-search{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-content: end;
-}
-nav{
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 2rem;
-}
-.header__nav__active{
-    color: #8a5fc5d3;
-    text-decoration: underline ;
-    font-size: 1.5rem;
-    padding: 1rem;
-}
-.header__nav{
-        color: #ffffff;
-        font-size: 1.5rem;
-        padding: 10px;
-}
-nav li a:hover {
-    background-color: #8a5fc5d3;
-    color: #ffffff;
-    border-radius: 2rem;
-    border: 2px inset #a280d3a6;
-}
-
-.header__search{
-    display: flex;
-    border-radius: 3rem;
-    background-color: #ffffff;
-    border-style: groove;
-    border-color: #000000bb;
-}
-.header__search input{
-    width: 50rem;
-    height: 3rem;
-    background:transparent;
-    text-align:start;
-    border: none;
-    padding: 0rem 1rem;
-}
-.header__search__loupe{
-    border: none;
-    width: 3rem;
-    height: 3rem;
-    background:#8a5fc5d3;
-    border-radius: 100%;
-}
-.header__search__loupe img{
-    width:17px ;
-}
-
-.header__favs-cart{
-    display: flex;
-    flex-direction: row;
-}
-.header__favs-cart a{
-    background-color:#3e3c3f;
-    margin-left: 3rem;
-    padding: 0.8rem 0.8rem 0.6rem;
-    border-radius: 4rem;
-    border: 1.5px ridge #746688a6;
-}
-.header__favs-cart img{
-    width: 3rem;
-}
-
-.header__login{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-.header__login__name{
-    width: fit-content;
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: #ffffff;
-}
-.header__login__img{
-    width: fit-content;
-}
-.header__login img{
-    width: 5rem;
-    margin-right: 3rem;
-}
 
 /*--------------Banner------------------*/
 body{
@@ -382,7 +279,7 @@ height: 650px;
 }
 
 /*----------------------------------CONTACTO----------------------------------*/
-
+/*
 form{
     width: 100%;
     text-align: end;
@@ -471,7 +368,16 @@ background-clip:0;
 }
 
 /*----------------------------------RESPONSIVE----------------------------------*/
+/*
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
 
+    
 /*---Product Lines---*/
 
 @media (max-width: 1200px) {

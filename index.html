@@ -15,75 +15,52 @@
 </head>
 <body>
     <header>
-        <div class="header__logo">
-            <a href="index.html">
-                <img src="img/logo2.png" class="header__logo__img"> 
-        </div>
-        <div class="header__nav-search">
-            <div class="header__search">        
-                <input type="search" name="search" placeholder="buscar...">
-                <button class="header__search__loupe">
-                    <img src="img/loupe_w.png" alt="loupe">
-                </button>
-            </div>
-            <nav>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="index.html" id="home" class="header__nav__active">Home</a>
-                        </li>
-                    </ul>
-                </div>            
-                <div>
-                    <ul>
-                    <li>
-                        <a href="pages/ofertas.html" id="home" class="header__nav">Ofertas</a>
-                    </li>
-                    </ul>
-                </div>            
-                <div>
-                    <ul>
-                        <li>
-                            <a href="pages/categorias.html" id="home" class="header__nav">Categorías</a>
-                        </li>
-                    </ul>
-                </div>        
-                <div>
-                    <ul>
-                        <li>
-                            <a href="pages/nuestros-trabajos.html" id="home" class="header__nav">Nuestros Trabajos</a>
-                        </li>
-                    </ul>
-                </div>            
-                <div>
-                    <ul>
-                        <li>
-                            <a href="pages/contacto.html" id="home" class="header__nav">contacto</a>
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Capybara
+                        <img src="img/Carpincho2.png" alt="Bootstrap" width="30" height="24">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categorías
+                                    </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Destacados</a></li>
+                                            <li><a class="dropdown-item" href="#">Figuras Coleccionables</a></li>
+                                            <li><a class="dropdown-item" href="#">Miniaturas</a></li>
+                                            <li><a class="dropdown-item" href="#">Bustos</a></li>
+                                            <li><a class="dropdown-item" href="#">Dioramas y Escenografías</a></li>
+                                            <li><a class="dropdown-item" href="#">Juegos Y Juguetes</a></li>
+                                            <li><a class="dropdown-item" href="#">Cosplay y Utilería</a></li>
+                                            <li><a class="dropdown-item" href="#">Decoración para el hogar</a></li>
+                                        </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nuestros Trabajos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Descubrir</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contacto</a>
+                                </li>
+                            </ul>
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
                 </div>
-        </nav>
-
-        </div>
-        <div class="header__favs-cart">
-            <a href="pages/categorias.html">
-                <img src="img/heart_W.png" alt="">
-            </a>
-            <a href="pages/categorias.html">
-                <img src="img/shopping-cart_W.png" alt="">
-            </a>
-        </div>
-        <div class="header__login">
-            <div class="header__login__name">
-                <p>Capybara User                   
-                </p>            
-            </div>
-            <div class="header__login__img">
-                <a href="pages/categorias.html">
-                    <img src="img/user.png" alt="login-img">
-                </a>
-            </div>
-        </div>
+            </nav>        
     </header>
 
     <main>
