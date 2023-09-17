@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lemon-milk';
+}
+html { /* etiqueta raíz */
+    font-size: 62.5%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+}
+/*------*/
+
+
+/*------WhatsApp--------*/
+
+.whatsapp {
+    width: 6rem;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
