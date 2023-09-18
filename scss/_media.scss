@@ -1,6 +1,7 @@
 /*---MEDIA--*/
 
 $background-grey:#1c1b21;
+$black:#000000;
 $white:#ffffff;
 $lilac:#8a5fc5d3;
 $lilac-fade:#8a5fc546;
@@ -41,7 +42,7 @@ $lilac-fade:#8a5fc546;
         height: 200px;
         margin-left: 4rem;         
             h1{
-                -webkit-text-stroke: 0.1px #ffffff;
+                -webkit-text-stroke: 1px $black;
                 font-size: 3rem;
             }    
     }

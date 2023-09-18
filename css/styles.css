@@ -39,9 +39,9 @@ h1, h2, h3 {
   align-items: center;
 }
 .banner__home h1 {
-  color: #000000;
+  color: #fff;
   font-weight: bolder;
-  -webkit-text-stroke: 0.1px #fff;
+  -webkit-text-stroke: 1px #000;
   font-size: 2.5rem;
 }
 
@@ -368,7 +368,7 @@ footer .footer__social .bi {
     margin-left: 4rem;
   }
   .banner__home h1 {
-    -webkit-text-stroke: 0.1px #ffffff;
+    -webkit-text-stroke: 1px #000000;
     font-size: 3rem;
   }
   /*--CONTACT--*/
