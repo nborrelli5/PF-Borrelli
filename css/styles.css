@@ -23,7 +23,28 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 /*------*/
+.banner__home {
+  display: flex;
+  width: auto;
+  height: 150px;
+  background-image: url(../img/banner2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 3rem;
+  align-items: center;
+}
+.banner__home h1 {
+  color: #000000;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.1px #fff;
+  font-size: 2.5rem;
+}
+
 /*------WhatsApp--------*/
 .whatsapp {
   width: 6rem;
@@ -131,7 +152,7 @@ body {
 }
 .main__products .main__products__line .main__products__line__header {
   display: flex;
-  align-items: end;
+  align-items: center;
   padding: 2rem 3rem;
 }
 .main__products .main__products__line .main__products__line__header .main__products__line__header__title {
@@ -145,9 +166,8 @@ body {
   padding-right: 0rem;
 }
 .main__products .main__products__line .main__products__line__header .main__products__line__header__more a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: rgba(138, 95, 197, 0.8274509804);
-  -webkit-text-stroke: 0.5px #000000;
 }
 .main__products .main__products__line .main__products__item {
   display: flex;
@@ -168,9 +188,10 @@ body {
 .cards-wrapper .card {
   max-height: 300px;
   max-width: 300px;
+  border: none;
 }
 .cards-wrapper .card .card-body {
-  background-color: rgba(138, 95, 197, 0.2745098039);
+  background-color: rgba(28, 27, 33, 0.7725490196);
   position: absolute;
   bottom: 0px;
   max-width: 300px;
@@ -181,27 +202,6 @@ body {
   text-align: center;
 }
 
-/*
-
-.card {
-    background-color: #232323;
-    color: #C5C0C0;
-    font-family: 'Open Sans', sans-serif;
-    width: 300px;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-}
-
-
-
-
-
-
-
-*/
 /*----------------FOOTER----------------*/
 footer {
   display: inline;
@@ -233,11 +233,112 @@ footer .footer__social .bi {
   -moz-text-fill-color: transparent;
 }
 
+/*----------------NUESTROS TRABAJOS----------------*/
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 4rem;
+}
+.main p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+.main h2 {
+  font-size: 2.5rem;
+  color: rgba(138, 95, 197, 0.8274509804);
+  padding: 30px;
+}
+.main .videos {
+  display: flex;
+  flex-direction: column;
+}
+.main .videos iframe {
+  width: 90%;
+  padding: 0 1rem;
+  align-self: center;
+}
+.main .photos .photo__gallery {
+  display: grid;
+  grid-template-areas: "photo1 photo1 photo2 photo3" "photo1 photo1 photo4 photo3" "photo5 photo5 photo5 photo5" "photo5 photo5 photo5 photo5";
+  margin: 0 1rem 1rem;
+  gap: 20px;
+}
+.main .photos .photo__gallery .photo1, .main .photos .photo__gallery .photo2, .main .photos .photo__gallery .photo3, .main .photos .photo__gallery .photo4, .main .photos .photo__gallery .photo5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main .photos .photo__gallery .photo1 {
+  grid-area: photo1;
+  background-image: url(../img/nuestros-trabajos/orig/lotr2-big.webp);
+  height: 650px;
+}
+.main .photos .photo__gallery .photo2 {
+  grid-area: photo2;
+  background-image: url(../img/nuestros-trabajos/orig/gimli-medium.webp);
+  height: 300px;
+}
+.main .photos .photo__gallery .photo3 {
+  grid-area: photo3;
+  background-image: url(../img/nuestros-trabajos/orig/ent.jpg);
+  height: 650px;
+}
+.main .photos .photo__gallery .photo4 {
+  grid-area: photo4;
+  background-image: url(../img/nuestros-trabajos/orig/witcher-small.webp);
+  height: 300px;
+}
+.main .photos .photo__gallery .photo5 {
+  grid-area: photo5;
+  background-image: url(../img/nuestros-trabajos/orig/oni-big.jpg);
+  height: 650px;
+}
+
+#form__contact {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+#form__contact .contact__bg__L {
+  background-image: url(../img/contact-bg-L.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 70%;
+}
+#form__contact .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0;
+  width: 80%;
+}
+#form__contact .contact input, #form__contact .contact textarea {
+  background-color: transparent;
+  border-color: rgba(138, 95, 197, 0.8274509804);
+  color: #ffffff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+#form__contact .contact .contact__submit {
+  text-align: center;
+}
+#form__contact .contact .contact__submit .contact__submit__button {
+  background-color: rgba(138, 95, 197, 0.8274509804);
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  border: 3px inset rgba(138, 95, 197, 0.8274509804);
+}
+
 /*---MEDIA--*/
+/*--------------------------------992px--------------------------------*/
 @media (min-width: 992px) {
+  /*--NAV--*/
   .navbar .navbar-brand {
     color: rgba(138, 95, 197, 0.8274509804);
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .navbar .navbar-brand img {
     width: 25%;
@@ -262,21 +363,61 @@ footer .footer__social .bi {
     color: #ffffff;
     background-image: radial-gradient(rgba(138, 95, 197, 0.8274509804) 20%, #1c1b21 60%);
   }
+  /*--BANNER--*/
+  .banner__home {
+    height: 200px;
+    margin-left: 4rem;
+  }
+  .banner__home h1 {
+    -webkit-text-stroke: 0.1px #ffffff;
+    font-size: 3rem;
+  }
+  /*--CONTACT--*/
+  .contact__bg__R {
+    background-image: url(../img/contact-bg-R.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80%;
+  }
+  .contact input, .contact textarea {
+    font-size: 1.5rem;
+  }
 }
+/*--------------------------------1200px--------------------------------*/
 @media (min-width: 1200px) {
+  /*--NAV--*/
   .navbar .navbar-nav {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .navbar .navbar-nav .dropdown-menu {
     left: 24vw;
   }
+  /*--BANNER--*/
+  .banner__home {
+    height: 225px;
+    margin-left: 5rem;
+  }
+  .banner__home h1 {
+    font-size: 3.5rem;
+  }
 }
+/*--------------------------------1400px--------------------------------*/
 @media (min-width: 1400px) {
+  /*--NAV--*/
   .navbar .navbar-nav {
     align-items: center;
   }
   .navbar .navbar-nav .dropdown-menu {
     left: 15vw;
+  }
+  /*--BANNER--*/
+  .banner__home {
+    height: 250px;
+    margin-left: 6rem;
+  }
+  .banner__home h1 {
+    font-size: 4rem;
   }
 }
 /*VARIABLES*/

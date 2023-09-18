@@ -4,14 +4,13 @@
     src: url(../fonts/LEMONMILK-Regular.otf);
 }
 $background-grey:#1c1b21;
+$black-fade:#1c1b21c5;
 $white:#ffffff;
 $black:#000000; 
 $lilac:#8a5fc5d3;
 $lilac-fade:#8a5fc546;
 $lilac-darker:#280842;
-
 /*----------------NAV----------------*/
-
 .bg-body-tertiary{
     background-color: ($background-grey)!important;
                 .navbar-brand{
@@ -84,7 +83,6 @@ $lilac-darker:#280842;
                         }                                                                                                                             
                 }
 }
-
 /*----------------MAIN----------------*/
 body{
     background-color: $background-grey;
@@ -104,7 +102,7 @@ body{
             position: relative;    
                 .main__products__line__header{
                     display: flex;
-                    align-items: end;
+                    align-items: center;
                     padding: 2rem 3rem;
                         .main__products__line__header__title{
                             width: 100%;
@@ -116,9 +114,8 @@ body{
                             text-align: end;
                             padding-right: 0rem;
                                 a{
-                                    font-size: 2rem;
+                                    font-size: 1.5rem;
                                     color: $lilac;
-                                    -webkit-text-stroke: .5px $black;
                                 }                            
                         }                                            
                 }
@@ -141,8 +138,9 @@ body{
         .card{
             max-height: 300px;
             max-width: 300px;
+            border: none;
                 .card-body{
-                    background-color:$lilac-fade;
+                    background-color:$black-fade;
                     position: absolute;
                     bottom: 0px;
                     max-width: 300px;
@@ -154,31 +152,6 @@ body{
                 }                
         }
 }
-
-/*
-
-.card {
-    background-color: #232323;
-    color: #C5C0C0;
-    font-family: 'Open Sans', sans-serif;
-    width: 300px;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-}
-
-
-
-
-
-
-
-*/
-
-
-
 /*----------------FOOTER----------------*/
 footer{
     display: inline;
@@ -209,5 +182,3 @@ footer{
                 }                                
         }
 }
-
-

@@ -17,11 +17,28 @@ a{
 img{
     max-width: 100%;
 }
+h1,h2,h3{
+    margin:0
+    
+}
 /*------*/
-
-
+.banner__home{
+    display: flex;
+    width: auto;
+    height: 150px;
+    background-image: url(../img/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 3rem;         
+    align-items: center;
+        h1{
+                color: #000000;
+                font-weight: bolder;
+                -webkit-text-stroke: 0.1px #fff;
+                font-size: 2.5rem;
+            }    
+}
 /*------WhatsApp--------*/
-
 .whatsapp {
     width: 6rem;
     position: fixed;
