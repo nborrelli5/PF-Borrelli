@@ -254,7 +254,6 @@ footer .footer__social .bi {
   flex-direction: column;
 }
 .main .videos iframe {
-  width: 90%;
   padding: 0 1rem;
   align-self: center;
 }
