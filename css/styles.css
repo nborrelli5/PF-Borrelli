@@ -184,11 +184,18 @@ body {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  z-index: 4;
 }
 .cards-wrapper .card {
   max-height: 300px;
   max-width: 300px;
   border: none;
+  /*ANIMACION*/
+  /*FIN ANIMACION*/
+}
+.cards-wrapper .card:hover {
+  transform: scale(1.5);
+  z-index: 10;
 }
 .cards-wrapper .card .card-body {
   background-color: rgba(28, 27, 33, 0.7725490196);
