@@ -1,0 +1,25 @@
+/*CATEGORIES*/ 
+.subcategories__cards{
+        .card{
+            width: 150px;
+            height: 250px;
+            background-color: transparent;
+                .card-img-top{
+                    border-radius: 10%;
+                }
+                .sub-card-body{
+                    position: absolute;
+                    bottom: 50px;
+                    width: 100%;
+                    color:$white;                    
+                    background-image: radial-gradient($black 10%, transparent 50%);
+                    font-weight: bolder; font-size: 30px;
+                    text-align: center;
+                    font-weight: bolder;
+                    -webkit-text-stroke: 1px #000;
+                    margin: 0;
+                    text-shadow: 1px 1px 5px black ;
+                }                
+            }
+        }
+

@@ -1,0 +1,110 @@
+/*---MEDIA--*/
+@import "estilos-comunes";
+
+/*--------------------------------992px--------------------------------*/
+@media (max-width:992px){
+/*--SIDE MENU--*/
+    .main__side-menu{
+        display: none!important;
+    }
+
+}
+
+@media (min-width:992px){
+/*--NAV--*/
+    .navbar{
+            .navbar-brand{
+                color: $lilac;
+                font-size: 2rem;    
+                    img{
+                        width: 25%;
+                        height: 25%;
+                    }
+            } 
+            .navbar-nav{ 
+                align-items: center;
+                    .nav-link{
+                        color:$white;
+                        padding: 20px;
+                        &:hover{
+                            color:$white;
+                            background-image: radial-gradient($lilac 20%,$background-grey 60%);
+                        }
+                    }
+                    .dropdown-menu{
+                        left: 25vw;
+                        margin-top: 0;
+                    }                   
+                    .nav-link.show{
+                        color: $white;
+                        background-image: radial-gradient($lilac 20%,$background-grey 60%);
+                    }
+            }       
+    }
+/*--BANNER--*/
+    .banner__home{
+        height: 200px;
+        margin-left: 4rem;         
+            h1{
+                -webkit-text-stroke: 1px $black;
+                font-size: 3rem;
+            }    
+    }
+
+
+
+
+/*--CONTACT--*/
+    .contact__bg__R{
+        background-image: url(../img/contact-bg-R.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position:center ;
+        width: 80%;
+    }
+    .contact{
+        input,textarea{
+            font-size: 1.5rem;
+        }
+    }
+}
+/*--------------------------------1200px--------------------------------*/
+@media (min-width:1200px){
+/*--NAV--*/
+    .navbar{
+        .navbar-nav{ 
+            font-size:1.7rem;
+                .dropdown-menu{
+                    left: 24vw;
+                }                   
+        }       
+    }
+/*--BANNER--*/
+.banner__home{
+    height: 225px;
+    margin-left: 5rem;
+        h1{
+            font-size: 3.5rem;
+        }           
+    }
+}
+/*--------------------------------1400px--------------------------------*/
+@media (min-width:1400px){
+/*--NAV--*/
+    .navbar{
+        .navbar-nav{ 
+            align-items: center;
+                .dropdown-menu{
+                    left: 15vw;
+                }                   
+        }       
+    }
+/*--BANNER--*/
+.banner__home{
+    height: 250px;
+    margin-left: 6rem; 
+        h1{
+            font-size: 4rem;
+        }
+    }
+}

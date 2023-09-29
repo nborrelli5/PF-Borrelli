@@ -1,19 +1,8 @@
 
-@import "estilos-comunes";
-@import "variables";
-@import "index";
-@import "nuestros-trabajos";
-@import "contacto";
-@import "media";
-
-
-
-
-
-/*VARIABLES*/
-
-
-/*----------------------------------INDEX----------------------------------*/
-
-
-
+@import "base/estilos-comunes";
+@import "pages/index";
+@import "pages/categorias";
+@import "pages/nuestros-trabajos";
+@import "pages/contacto";
+@import "base/media";
+@import "base/404"

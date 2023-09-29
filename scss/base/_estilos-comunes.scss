@@ -1,0 +1,171 @@
+/*----Estilos comunes----*/
+
+/*Colors*/
+$background-grey:#1c1b21;
+$black-fade:#1c1b21c5;
+$white:#ffffff;
+$black:#000000; 
+$lilac:#8a5fc5d3;
+$lilac-fade:#8a5fc546;
+$lilac-darker:#280842;
+
+@font-face{
+    font-family: 'Lemon-milk';
+    src: url(../fonts/LEMONMILK-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lemon-milk';
+}
+html { /* etiqueta raíz */
+    font-size: 62.5%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3{
+    margin:0
+    
+}
+body{
+    background-color: $background-grey;
+}
+/*----------------NAV----------------*/
+.bg-body-tertiary{
+    background-color: ($background-grey)!important;
+                .navbar-brand{
+                    color: $lilac;
+                    font-size: 2.5rem;                               
+                        img{
+                            width: 19%;
+                            height: 19%;
+                        }
+                } 
+                .navbar-toggler{
+                    border: none;
+                    background-color: $lilac;
+                    }   
+                .navbar-nav{
+                    text-align:center;
+                    font-size:1.5rem;
+                        .nav-link.active{
+                            color: $lilac;
+                            &:hover{
+                                color: $white;        
+                            }
+                        }
+                        .nav-link{
+                            color:$white;
+                                &:hover{
+                                    background-image: linear-gradient(to right,$background-grey,$lilac,$background-grey);
+                                }
+                        }
+                        .nav-link.show{
+                            color: $white;
+                            background-color: $lilac-fade;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                        }
+                        .dropdown-menu{
+                            background-color: $background-grey;
+                            border: 2px ridge $lilac;
+                            align-content: center; 
+                            .dropdown-item{
+                                color: $white;
+                                text-align: center;
+                                font-size: 1.2rem;
+                                    &:hover{
+                                        background-image: linear-gradient(to right,$background-grey,$lilac,$background-grey);
+                                    color: $white;
+                                    }
+                            }                            
+                        }
+                    }
+                .collapse{                    
+                        .d-flex{
+                            border: 2px inset;
+                            border-radius: 10px;
+                            border-color: $lilac-fade;
+                        }
+                        .form-control{
+                            margin:0!important;
+                            border-radius: 10px 0 0 10px;
+                        }                                             
+                        .btn{
+                            width: 35px;
+                            background-color: $lilac;
+                            border-radius: 0 10px 10px 0;
+                            border: none;
+                            background-image: url(../img/search.svg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            padding: 0;       
+                        }                                                                                                                             
+                }
+}
+
+/*---Banner---*/
+.banner__home{
+    display: flex;
+    width: auto;
+    height: 150px;
+    background-image: url(../img/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 3rem;         
+    align-items: center;
+        h1{
+                color:#fff;
+                font-weight: bolder;
+                -webkit-text-stroke: 1px #000;
+                font-size: 2.5rem;
+            }    
+}
+/*------WhatsApp--------*/
+.whatsapp {
+    width: 6rem;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    z-index: 5;
+}
+/*----------------FOOTER----------------*/
+footer{
+    display: inline;
+    color:$lilac;
+    font-size: 2rem;
+    text-align: center;
+        .footer__social{
+            width: auto;
+            padding: 20px;
+            border-top: solid 1px $lilac;
+            background-color:$background-grey;
+                p{
+                    font-size: 1.3rem;
+                    padding: 15px 0px;
+                    margin: 0;
+                }
+                .bi{
+                    color:$white;
+                    font-size: 35px;
+                    margin: 0 8px;
+                    background-color:$lilac-darker;
+                    background-image: linear-gradient(45deg, $lilac,$lilac-fade);
+                    background-clip:0;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent; 
+                    -moz-background-clip: text;
+                    -moz-text-fill-color: transparent;
+                }                                
+        }
+}
