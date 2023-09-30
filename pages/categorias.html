@@ -77,115 +77,187 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="pages/categorias.html" target="_blank">Destacados</a>
+                            <a href="categorias.html">Destacados</a>
                         </li>
                         <li>
-                            <a href="pages/categorias.html" target="_blank">Figuras Coleccionables</a>
+                            <a href="categorias.html" class="active-menu">Figuras Coleccionables</a>
                         </li>
                         <li>
-                            <a href="pages/categorias.html" target="_blank">Miniaturas</a>
+                            <a href="categorias.html">Miniaturas</a>
                         </li>
                         <li>
-                            <a href="pages/categorias.html" target="_blank">Bustos</a>
+                            <a href="categorias.html">Bustos</a>
                         </li>
                         <li>
-                            <a href="pages/categorias.html" target="_blank">Dioramas y escenografías</a>
+                            <a href="categorias.html">Dioramas y escenografías</a>
                         </li>
                         <li>
-                            <a href="pages/categorias.html" target="_blank">Juegos y juguetes</a>
+                            <a href="categorias.html">Juegos y juguetes</a>
                         </li>
                         <li>
-                            <a href="pages/categorias.html" target="_blank">Cosplay y utilería</a>
+                            <a href="categorias.html">Cosplay y utilería</a>
                         </li>
                         <li>
-                            <a href="pages/categorias.html" target="_blank">Decoración para el hogar</a>
+                            <a href="404.html">Error 404</a>
                         </li>
                     </ul>
                 </div>
             </aside>
-            <section>
-<!--Cards 1 -->
-                <div class="subcategories">
-                    <div class="subcategories__title">
-                            <h3>Sub-categorias</h3>
+            <section class="section__cards">
+                <h2>figuras coleccionables</h2>
+                <div class="filtro-categorias">
+                    <!-- INPUTS -->
+                    <input type="radio" name="seleccionado" id="dc">
+                    <input type="radio" name="seleccionado" id="marvel">
+                    <input type="radio" name="seleccionado" id="avengers">
+                    <input type="radio" name="seleccionado" id="x-men">
+                    <input type="radio" name="seleccionado" id="otros">
+                    <input type="radio" name="seleccionado" id="todos" checked>
+<!--Subcategories-->
+                    <div class="subcategories">
+                        <div class="subcategories__title">
+                                <h3>Filtrar por subcategoria</h3>
+                        </div>
+                        <div id="line" class="subcategories__cards">
+                            <div class="subcategories__cards-wrapper">
+                                <div class="card">
+                                        <label for="dc">
+                                        <img src="../img/categorias/batman.jpg" class="card-img-top" alt="">
+                                        <div class="sub-card-body">
+                                            <p class="sub-card-text">DC</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="card ">
+                                    <label for="marvel">
+                                        <img src="../img/categorias/iron-man.jpg" class="card-img-top" alt="...">
+                                        <div class="sub-card-body">
+                                            <p class="sub-card-text">Marvel</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            
+                                <div class="card">
+                                    <label for="avengers">
+                                        <img src="../img/categorias/spiderman.jpg" class="card-img-top" alt="...">
+                                        <div class="sub-card-body">
+                                            <p class="sub-card-text">avengers</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="card">
+                                    <label for="x-men">
+                                        <img src="../img/categorias/wolverine.jpg" class="card-img-top" alt="...">
+                                        <div class="sub-card-body">
+                                            <p class="sub-card-text">x-men</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="card">
+                                    <label for="otros">
+                                    <img src="../img/categorias/hellboy.jpg" class="card-img-top" alt="...">
+                                        <div class="sub-card-body">
+                                            <p class="sub-card-text">otros</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="card">
+                                    <label for="todos">
+                                        <img src="../img/categorias/2021-06-Jun - Empire of Sands Sekhmet Awakens.jpg" class="card-img-top" alt="...">
+                                        <div class="sub-card-body">
+                                            <p class="sub-card-text">todos</p>
+                                        </div>
+                                    </label>
+                                </div>                                                                                                                                                
+
+                            </div>
+                        </div>
                     </div>
-                    <div id="line" class="subcategories__cards">
-                        <div class="cards-wrapper">
-                            <div class="card" >
-                                <img src="../img/categorias/batman.jpg" class="card-img-top" alt="...">
-                                <div class="sub-card-body">
-                                <p class="sub-card-text">DC</p>
+    <!--Categories - cards -->
+                    <div class="categories__cards">
+                        <div class="categories__cards__title">
+                                <h3>Modelos</h3>
+                        </div>
+                        <div id="line" class="cards">
+                            <div class="categories__cards-wrapper">
+                                <div class="card otros" >
+                                    <img src="../img/categorias/20_Tiamat.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 1</p>
+                                    </div>
                                 </div>
+                                <div class="card dc">
+                                    <img src="../img/categorias/Aquaman 2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 2</p>
+                                    </div>
+                                </div> 
+                                <div class="card dc">
+                                    <img src="../img/categorias/Batman 03.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 3</p>
+                                    </div>
+                                </div>
+                                <div class="card marvel avengers">
+                                    <img src="../img/categorias/Captain America 01.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 4</p>
+                                    </div>
+                                </div>
+                                <div class="card marvel" >
+                                    <img src="../img/categorias/Deadpool 1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 5</p>
+                                        </div>
+                                </div>
+                                <div class="card dc">
+                                    <img src="../img/categorias/Harley Quinn 01.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 6</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="card x-men">
+                                    <img src="../img/categorias/Wolverine 01.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 7</p>
+                                    </div>
+                                </div>
+                                <div class="card marvel avengers">
+                                    <img src="../img/categorias/Hulk 02.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                    <p class="card-text">model 8</p>
+                                    </div>
+                                </div>
+                                <div class="card marvel avengers" >
+                                    <img src="../img/categorias/Iron Man 01.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 9</p>
+                                    </div>
+                                </div>
+                                <div class="card marvel">
+                                    <img src="../img/categorias/Moon Knight 01.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 10</p>
+                                    </div>
+                                </div>                          
+                                <div class="card otros">
+                                    <img src="../img/categorias/Spawn 01.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 11</p>
+                                    </div>
+                                </div>
+                                <div class="card marvel avengers">
+                                    <img src="../img/categorias/Spiderman 11.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">model 12</p>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div class="card ">
-                                <img src="../img/categorias/iron-man.jpg" class="card-img-top" alt="...">
-                                <div class="sub-card-body">
-                                <p class="sub-card-text">Marvel</p>
-                                </div>
-                            </div>
-                        
-                            <div class="card">
-                                <img src="../img/categorias/spiderman.jpg" class="card-img-top" alt="...">
-                                <div class="sub-card-body">
-                                <p class="sub-card-text">spidermar</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="../img/categorias/wolverine.jpg" class="card-img-top" alt="...">
-                                <div class="sub-card-body">
-                                <p class="sub-card-text">x-men</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="../img/categorias/hellboy.jpg" class="card-img-top" alt="...">
-                                <div class="sub-card-body">
-                                <p class="sub-card-text">otros</p>
-                                </div>
-                            </div>                                                                                                                                                
                         </div>
                     </div>
                 </div>
-<!-- Cards 2 -->
-<div class="main__products__line">
-    <div class="main__products__line__header">
-        <div class="main__products__line__header__title">
-            <h3>Destacados</h3>
-        </div>
-        <div class="main__products__line__header__more">
-            <a href="pages/categorias.html">Ver mas</a>
-        </div>
-    </div>
-    <div id="line" class="main__products__cards">
-        <div class="cards-wrapper">
-            <div class="card" >
-                <img src="../img/categorias/batman.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <p class="card-text">DC</p>
-                </div>
-            </div>
-            <div class="card ">
-                <img src="../img/categorias/iron-man.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <p class="card-text">Marvel</p>
-                </div>
-            </div>
-        
-            <div class="card">
-                <img src="../img/categorias/spiderman.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <p class="card-text">spidermar</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="../img/categorias/wolverine.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <p class="card-text">x-men</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
             </section>
         </div>
     </main>

@@ -420,7 +420,7 @@ footer .footer__social .bi {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 50px;
+  padding: 20px;
 }
 .main .main__side-menu .main__side-menu__categories {
   height: fit-content;
@@ -456,30 +456,138 @@ footer .footer__social .bi {
 }
 .main .main__side-menu .main__side-menu__categories ul li a {
   color: #ffffff;
+  display: flex;
+  text-align: left;
+  width: 100%;
 }
 
 /*CATEGORIES*/
-.subcategories__cards .card {
-  width: 150px;
-  height: 250px;
+.section__cards {
+  width: 75%;
+  /*filtro*/
+}
+.section__cards h2 {
+  width: 100%;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+  -webkit-text-stroke: 1px #000;
+  padding: 20px 0px;
+}
+.section__cards .subcategories {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.section__cards .subcategories .subcategories__title {
+  padding: 30px;
+}
+.section__cards .subcategories .subcategories__title h3 {
+  width: 100%;
+  font-size: 17px;
+  color: #ffffff;
+}
+.section__cards .subcategories .subcategories__cards-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.section__cards .subcategories .subcategories__cards-wrapper .card {
+  width: 130px;
   background-color: transparent;
 }
-.subcategories__cards .card .card-img-top {
+.section__cards .subcategories .subcategories__cards-wrapper .card .card-img-top {
   border-radius: 10%;
 }
-.subcategories__cards .card .sub-card-body {
+.section__cards .subcategories .subcategories__cards-wrapper .card .sub-card-body {
   position: absolute;
-  bottom: 50px;
+  bottom: 10px;
   width: 100%;
   color: #ffffff;
   background-image: radial-gradient(#000000 10%, transparent 50%);
-  font-weight: bolder;
-  font-size: 30px;
+  font-weight: 500;
+  font-size: 23px;
   text-align: center;
   font-weight: bolder;
   -webkit-text-stroke: 1px #000;
   margin: 0;
   text-shadow: 1px 1px 5px black;
+}
+.section__cards .categories__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.section__cards .categories__cards .categories__cards__title h3 {
+  color: white;
+  font-size: 20px;
+  padding: 30px;
+}
+.section__cards .categories__cards .categories__cards-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 25px;
+}
+.section__cards .categories__cards .categories__cards-wrapper .card {
+  width: 250px;
+  height: 250px;
+  border: none;
+}
+.section__cards .categories__cards .categories__cards-wrapper .card:hover {
+  transform: scale(1.3);
+  z-index: 10;
+}
+.section__cards .categories__cards .categories__cards-wrapper .card .card-img-top {
+  width: 250px;
+  height: 250PX;
+  object-fit: cover;
+}
+.section__cards .categories__cards .categories__cards-wrapper .card .card-body {
+  background-color: rgba(28, 27, 33, 0.7725490196);
+  position: absolute;
+  bottom: 0px;
+  max-width: 300px;
+  width: 100%;
+  color: #ffffff;
+}
+.section__cards .categories__cards .categories__cards-wrapper .card .card-text {
+  text-align: center;
+}
+.section__cards #dc, .section__cards #marvel, .section__cards #avengers, .section__cards #x-men, .section__cards #otros, .section__cards #todos {
+  display: none;
+}
+.section__cards .dc, .section__cards .marvel, .section__cards .avengers, .section__cards .x-men, .section__cards .otros {
+  display: none;
+}
+.section__cards #dc:checked ~ .categories__cards .dc {
+  display: flex;
+}
+.section__cards #marvel:checked ~ .categories__cards .marvel {
+  display: flex;
+}
+.section__cards #avengers:checked ~ .categories__cards .avengers {
+  display: flex;
+}
+.section__cards #x-men:checked ~ .categories__cards .x-men {
+  display: flex;
+}
+.section__cards #otros:checked ~ .categories__cards .otros {
+  display: flex;
+}
+.section__cards #todos:checked ~ .categories__cards .dc,
+.section__cards #todos:checked ~ .categories__cards .marvel,
+.section__cards #todos:checked ~ .categories__cards .avengers,
+.section__cards #todos:checked ~ .categories__cards .x-men,
+.section__cards #todos:checked ~ .categories__cards .otros {
+  display: flex;
+}
+
+/*side-menu*/
+.active-menu {
+  color: rgba(138, 95, 197, 0.8274509804) !important;
 }
 
 /*----------------NUESTROS TRABAJOS----------------*/

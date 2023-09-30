@@ -82,7 +82,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 50px;
+            padding: 20px;
                 .main__side-menu__categories{
                     height: fit-content;
                     background-color:$black;
@@ -116,6 +116,9 @@
                                 
                                     a{
                                             color: $white;
+                                            display: flex;
+                                            text-align: left;
+                                            width: 100%;
                                         }
                                     
                                 }                            
