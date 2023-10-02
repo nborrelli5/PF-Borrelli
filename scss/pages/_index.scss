@@ -1,6 +1,38 @@
-@import "../base/estilos-comunes";
-
-/*--CARDS TITLE--*/
+/*----------------INDEX----------------*/ 
+/*INTRO*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    .intro__text{
+            h2{
+                font-size: 3rem;
+                color: $lilac-fade;
+                -webkit-text-stroke: 1px $lilac;
+                padding: 30px;
+                text-align: center;
+            }
+            h4{
+                font-size: 2rem;
+                color: $lilac;
+                padding: 15px 30px;
+            }
+            p{
+                color: $white;
+                font-size: 1.5rem;
+                padding: 15px 30px;
+            }
+    }
+    .intro__img{
+        height: 200px;
+        background-image:url(../img/index/printer2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+        margin: 30px 30px 60px;
+    }
+}
+/*CARDS TITLE*/
 .main__products{
     display: flex;
     flex-direction: column; 
@@ -42,7 +74,7 @@
                 }                            
         }    
 }
-/*--CARDS--*/
+/*CARDS*/
 .cards-wrapper {
     display: flex;
     gap: 30px;
@@ -70,19 +102,18 @@
                 }                
         }
 }
-/*----------------SIDEBAR----------------*/
+/*SIDEBAR-*/
 .main{
     display: flex;
     flex-direction: row;
-    align-content: stretch;
-    
+    align-content: stretch;    
         .main__side-menu{
             width: 25%;
             height: auto;
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: 20px;
+            padding: 100px 20px;
                 .main__side-menu__categories{
                     height: fit-content;
                     background-color:$black;

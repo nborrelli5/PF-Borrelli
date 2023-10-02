@@ -6,9 +6,8 @@
             font-size: 40px;
             color: $white; 
             text-align: center;
-            -webkit-text-stroke: 1px #000;
+            -webkit-text-stroke: 1px $black;
             padding: 20px 0px;
-
         }
 .subcategories{
     display: flex;
@@ -42,21 +41,20 @@
                             font-size: 23px;
                             text-align: center;
                             font-weight: bolder;
-                            -webkit-text-stroke: 1px #000;
+                            -webkit-text-stroke: 1px $black;
                             margin: 0;
-                            text-shadow: 1px 1px 5px black ;
+                            text-shadow: 1px 1px 5px $black ;
                         }                
                     }
         }
     }
-
 .categories__cards{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
         .categories__cards__title{
             h3{
-                color: white;
+                color: $white;
                 font-size: 20px;
                 padding: 30px;
             }
@@ -117,7 +115,6 @@
 #otros:checked ~ .categories__cards .otros{
     display: flex;
 }
-
 #todos:checked ~ .categories__cards .dc,
 #todos:checked ~ .categories__cards .marvel,
 #todos:checked ~ .categories__cards .avengers,
@@ -128,5 +125,5 @@
 }
 /*side-menu*/
 .active-menu{
-    color: rgba(138, 95, 197, 0.8274509804) !important;
+    color: $lilac !important;
 }
