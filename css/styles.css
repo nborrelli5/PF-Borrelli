@@ -1,11 +1,11 @@
 @charset "UTF-8";
-/*----------------ESTILOS COMUNES----------------*/
 /*Colors*/
 @import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
 @font-face {
   font-family: "Lemon-milk";
   src: url(../fonts/LEMONMILK-Regular.otf);
 }
+/*----------------ESTILOS COMUNES----------------*/
 * {
   margin: 0;
   padding: 0;
@@ -91,9 +91,9 @@ body {
   color: #ffffff;
 }
 .bg-body-tertiary .collapse .d-flex {
-  border: 2px inset;
-  border-radius: 10px;
-  border-color: rgba(138, 95, 197, 0.2745098039);
+  text-align: center;
+  max-width: 70%;
+  margin: 0 20%;
 }
 .bg-body-tertiary .collapse .form-control {
   border-radius: 10px 0 0 10px;
@@ -125,6 +125,17 @@ body {
   font-weight: bolder;
   -webkit-text-stroke: 1px #000000;
   font-size: 2.5rem;
+}
+
+/*Alerts*/
+.alert {
+  text-align: center;
+  width: auto;
+  position: absolute;
+  left: 50%;
+  bottom: -1%;
+  z-index: 9;
+  position: fixed;
 }
 
 /*WhatsApp*/
@@ -172,9 +183,11 @@ footer .footer__social .bi {
 .intro {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid rgba(138, 95, 197, 0.2745098039);
 }
 .intro .intro__text h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgba(138, 95, 197, 0.2745098039);
   -webkit-text-stroke: 1px rgba(138, 95, 197, 0.8274509804);
   padding: 30px;
@@ -183,20 +196,20 @@ footer .footer__social .bi {
 .intro .intro__text h4 {
   font-size: 2rem;
   color: rgba(138, 95, 197, 0.8274509804);
-  padding: 15px 30px;
+  padding: 15px;
 }
 .intro .intro__text p {
   color: #ffffff;
   font-size: 1.5rem;
-  padding: 15px 30px;
+  padding: 15px;
 }
 .intro .intro__img {
-  height: 200px;
-  background-image: url(../img/index/printer2.jpg);
+  width: 80%;
+  height: 300px;
+  background-image: url(../img/index/printer2.1.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
   margin: 30px 30px 60px;
 }
 
@@ -326,17 +339,24 @@ footer .footer__social .bi {
 }
 
 /*CATEGORIES*/
+.main {
+  justify-content: center;
+}
+
 .section__cards {
   width: 75%;
   /*filtro*/
 }
 .section__cards h2 {
-  width: 100%;
-  font-size: 40px;
-  color: #ffffff;
+  font-size: 2.5rem;
+  color: rgba(138, 95, 197, 0.2745098039);
+  -webkit-text-stroke: 1px rgba(138, 95, 197, 0.8274509804);
+  padding: 30px;
   text-align: center;
-  -webkit-text-stroke: 1px #000000;
-  padding: 20px 0px;
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .section__cards .subcategories {
   display: flex;
@@ -344,7 +364,7 @@ footer .footer__social .bi {
   justify-content: space-evenly;
 }
 .section__cards .subcategories .subcategories__title {
-  padding: 30px;
+  padding: 30px 0;
 }
 .section__cards .subcategories .subcategories__title h3 {
   width: 100%;
@@ -458,24 +478,32 @@ footer .footer__social .bi {
 .content__nuestros-trabajos {
   display: flex;
   flex-direction: column;
-  padding: 1rem 4rem;
-}
-.content__nuestros-trabajos p {
-  color: #ffffff;
-  font-size: 1.5rem;
-  padding: 2rem 0;
 }
 .content__nuestros-trabajos h2 {
+  font-size: 2.5rem;
+  color: rgba(138, 95, 197, 0.2745098039);
+  -webkit-text-stroke: 1px rgba(138, 95, 197, 0.8274509804);
+  padding: 30px;
+  text-align: center;
+}
+.content__nuestros-trabajos h3 {
   font-size: 2.5rem;
   color: rgba(138, 95, 197, 0.8274509804);
   padding: 30px;
 }
+.content__nuestros-trabajos p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 15px;
+  text-align: center;
+}
 .content__nuestros-trabajos .videos {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 .content__nuestros-trabajos .videos iframe {
-  padding: 0 1rem;
+  max-width: 100%;
   align-self: center;
 }
 .content__nuestros-trabajos .photos .photo__gallery {
@@ -513,6 +541,35 @@ footer .footer__social .bi {
   grid-area: photo5;
   background-image: url(../img/nuestros-trabajos/orig/oni-big.jpg);
   height: 650px;
+}
+
+.intro-descubrir h2 {
+  font-size: 2.5rem;
+  color: rgba(138, 95, 197, 0.2745098039);
+  -webkit-text-stroke: 1px rgba(138, 95, 197, 0.8274509804);
+  padding: 30px;
+  text-align: center;
+}
+.intro-descubrir p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+.comenzar {
+  display: flex;
+  justify-content: center;
+}
+.comenzar .comenzar__button {
+  background-color: rgba(138, 95, 197, 0.8274509804);
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  border: 3px inset rgba(138, 95, 197, 0.8274509804);
+}
+
+#carouselExampleCaptions {
+  margin: 0 auto;
+  padding: 10%;
 }
 
 /*----------------CONTACTO----------------*/
@@ -598,6 +655,21 @@ footer .footer__social .bi {
   .banner__home h1 {
     -webkit-text-stroke: 1px #000000;
     font-size: 3rem;
+  }
+  /*INTRO*/
+  .intro .intro__text h2 {
+    font-size: 3.5rem;
+    padding-top: 60px;
+  }
+  .intro .intro__text h4 {
+    font-size: 2rem;
+    color: rgba(138, 95, 197, 0.8274509804);
+    padding: 15px 100px;
+  }
+  .intro .intro__text p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 15px 150px;
   }
   /*CONTACT*/
   .contact__bg__R {

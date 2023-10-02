@@ -1,0 +1,18 @@
+.intro-descubrir{
+    h2{
+        @include intro-h2;
+    }
+    p{
+        @include intro-p;
+    }    
+}
+.comenzar{
+    display: flex;
+    justify-content: center;
+        .comenzar__button{@include button
+    }
+}
+#carouselExampleCaptions{
+    margin: 0 auto;
+    padding: 10%;
+}

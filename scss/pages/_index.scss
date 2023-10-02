@@ -3,32 +3,26 @@
 .intro{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid $lilac-fade;
     .intro__text{
             h2{
-                font-size: 3rem;
-                color: $lilac-fade;
-                -webkit-text-stroke: 1px $lilac;
-                padding: 30px;
-                text-align: center;
+                @include intro-h2;
             }
             h4{
-                font-size: 2rem;
-                color: $lilac;
-                padding: 15px 30px;
+                @include intro-h4;
             }
             p{
-                color: $white;
-                font-size: 1.5rem;
-                padding: 15px 30px;
+                @include intro-p;
             }
     }
     .intro__img{
-        height: 200px;
-        background-image:url(../img/index/printer2.jpg);
+        width: 80%;
+        height: 300px;
+        background-image:url(../img/index/printer2.1.jpg);
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        background-attachment: fixed;
+        background-position: bottom;
+        background-size:cover;
         margin: 30px 30px 60px;
     }
 }

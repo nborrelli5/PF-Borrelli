@@ -1,69 +1,70 @@
 /*----------------NUESTROS TRABAJOS----------------*/
+
 .content__nuestros-trabajos{
     display: flex;
     flex-direction: column;
-    padding: 1rem 4rem;
-        p{
-            color: $white;
-            font-size: 1.5rem;
-            padding: 2rem 0;
-        }
         h2{
-        font-size: 2.5rem;
-        color: $lilac;
-        padding: 30px;
-    }
-    .videos{
-        display: flex;
-        flex-direction: column;
-            iframe{
-                padding: 0 1rem;
-                align-self: center;
+            @include intro-h2;
         }
-    }
-    .photos{
-        .photo__gallery{
-            display: grid;
-            grid-template-areas:
-            "photo1 photo1 photo2 photo3"
-            "photo1 photo1 photo4 photo3"
-            "photo5 photo5 photo5 photo5"
-            "photo5 photo5 photo5 photo5";
-            margin: 0 1rem 1rem;
-            gap: 20px;
-            .photo1, .photo2, .photo3, .photo4, .photo5{
-                
-                background-repeat:no-repeat;
-                background-size:cover;
-                background-position: center;
+        h3{
+            @include intro-h3;
+        }
+        p{
+            @include intro-p;
+            text-align: center;
+        }
+        .videos{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+                iframe{
+                    max-width: 100%;
+                    align-self: center;
             }
-            .photo1{
-                grid-area: photo1;
-                background-image: url(../img/nuestros-trabajos/orig/lotr2-big.webp);
-                height: 650px;
+        }
+        .photos{
+            .photo__gallery{
+                display: grid;
+                grid-template-areas:
+                "photo1 photo1 photo2 photo3"
+                "photo1 photo1 photo4 photo3"
+                "photo5 photo5 photo5 photo5"
+                "photo5 photo5 photo5 photo5";
+                margin: 0 1rem 1rem;
+                gap: 20px;
+                .photo1, .photo2, .photo3, .photo4, .photo5{
 
-            }
-            .photo2{
-                grid-area: photo2;
-                background-image: url(../img/nuestros-trabajos/orig/gimli-medium.webp);               
-                height: 300px;
-            }
+                    background-repeat:no-repeat;
+                    background-size:cover;
+                    background-position: center;
+                }
+                .photo1{
+                    grid-area: photo1;
+                    background-image: url(../img/nuestros-trabajos/orig/lotr2-big.webp);
+                    height: 650px;
 
-            .photo3{
-                grid-area: photo3;
-                background-image: url(../img/nuestros-trabajos/orig/ent.jpg);
-                height: 650px;
-            }
-            .photo4{
-                grid-area: photo4;
-                background-image: url(../img/nuestros-trabajos/orig/witcher-small.webp);
-                height: 300px;
-            }
-            .photo5{
-                grid-area: photo5;
-                background-image: url(../img/nuestros-trabajos/orig/oni-big.jpg);
-                height: 650px;
-            }        
-        }       
-    }
+                }
+                .photo2{
+                    grid-area: photo2;
+                    background-image: url(../img/nuestros-trabajos/orig/gimli-medium.webp);               
+                    height: 300px;
+                }
+
+                .photo3{
+                    grid-area: photo3;
+                    background-image: url(../img/nuestros-trabajos/orig/ent.jpg);
+                    height: 650px;
+                }
+                .photo4{
+                    grid-area: photo4;
+                    background-image: url(../img/nuestros-trabajos/orig/witcher-small.webp);
+                    height: 300px;
+                }
+                .photo5{
+                    grid-area: photo5;
+                    background-image: url(../img/nuestros-trabajos/orig/oni-big.jpg);
+                    height: 650px;
+                }        
+            }       
+        }
 }

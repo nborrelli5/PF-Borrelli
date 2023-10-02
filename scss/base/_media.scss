@@ -46,7 +46,25 @@
                 font-size: 3rem;
             }    
     }
-
+/*INTRO*/
+.intro{
+    .intro__text{
+            h2{
+                font-size: 3.5rem;
+                padding-top: 60px; 
+            }
+            h4{
+                font-size: 2rem;
+                color: $lilac;
+                padding: 15px 100px;
+            }
+            p{
+                color: $white;
+                font-size: 1.5rem;
+                padding: 15px 150px;
+            }
+    }
+}
 /*CONTACT*/
     .contact__bg__R{
         background-image: url(../img/contact-bg-R.png);

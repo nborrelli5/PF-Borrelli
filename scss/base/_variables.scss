@@ -1,0 +1,40 @@
+/*Colors*/
+$background-grey:#1c1b21;
+$black-fade:#1c1b21c5;
+$white:#ffffff;
+$black:#000000; 
+$lilac:#8a5fc5d3;
+$lilac-fade:#8a5fc546;
+$lilac-darker:#280842;
+@font-face{
+    font-family: 'Lemon-milk';
+    src: url(../fonts/LEMONMILK-Regular.otf);
+}
+@mixin intro-h2{
+    font-size: 2.5rem;
+    color: $lilac-fade;
+    -webkit-text-stroke: 1px $lilac;
+    padding: 30px;
+    text-align: center;
+}
+@mixin intro-h3{
+    font-size: 2.5rem;
+    color: $lilac;
+    padding: 30px;
+}
+@mixin intro-h4{
+    font-size: 2rem;
+    color: $lilac;
+    padding: 15px;
+}
+@mixin intro-p{
+    color: $white;
+    font-size: 1.5rem;
+    padding: 15px;    
+}
+@mixin button{
+    background-color: $lilac;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    border: 3px inset $lilac;
+}
