@@ -498,7 +498,7 @@ footer .footer__social .bi {
   text-align: center;
 }
 .content__nuestros-trabajos .videos {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
