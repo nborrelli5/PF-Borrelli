@@ -114,7 +114,7 @@ body {
   display: flex;
   width: auto;
   height: 150px;
-  background-image: url(../img/banner2.png);
+  background-image: url(../img/banner2-min.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 3rem;
@@ -134,7 +134,7 @@ body {
   position: absolute;
   left: 50%;
   bottom: -1%;
-  z-index: 9;
+  z-index: 11;
   position: fixed;
 }
 
@@ -182,7 +182,7 @@ footer .footer__social .bi {
 /*INTRO*/
 .intro {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   border-bottom: 2px solid rgba(138, 95, 197, 0.2745098039);
 }
@@ -202,15 +202,6 @@ footer .footer__social .bi {
   color: #ffffff;
   font-size: 1.5rem;
   padding: 15px;
-}
-.intro .intro__img {
-  width: 80%;
-  height: 300px;
-  background-image: url(../img/index/printer2.1.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  margin: 30px 30px 60px;
 }
 
 /*CARDS TITLE*/
@@ -270,7 +261,7 @@ footer .footer__social .bi {
   border: none;
 }
 .cards-wrapper .card:hover {
-  transform: scale(1.3);
+  transform: scale(1.05);
   z-index: 10;
 }
 .cards-wrapper .card .card-body {
@@ -510,37 +501,39 @@ footer .footer__social .bi {
   display: grid;
   grid-template-areas: "photo1 photo1 photo2 photo3" "photo1 photo1 photo4 photo3" "photo5 photo5 photo5 photo5" "photo5 photo5 photo5 photo5";
   margin: 0 1rem 1rem;
-  gap: 20px;
+  gap: 5px;
 }
 .content__nuestros-trabajos .photos .photo__gallery .photo1, .content__nuestros-trabajos .photos .photo__gallery .photo2, .content__nuestros-trabajos .photos .photo__gallery .photo3, .content__nuestros-trabajos .photos .photo__gallery .photo4, .content__nuestros-trabajos .photos .photo__gallery .photo5 {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
 }
 .content__nuestros-trabajos .photos .photo__gallery .photo1 {
   grid-area: photo1;
-  background-image: url(../img/nuestros-trabajos/orig/lotr2-big.webp);
-  height: 650px;
+  background-image: url(../img/nuestros-trabajos/lotr2-min.jpg);
+  height: 210px;
 }
 .content__nuestros-trabajos .photos .photo__gallery .photo2 {
   grid-area: photo2;
-  background-image: url(../img/nuestros-trabajos/orig/gimli-medium.webp);
-  height: 300px;
+  background-image: url(../img/index/gimli-medium-min.jpg);
+  height: 100px;
+  background-position: bottom;
 }
 .content__nuestros-trabajos .photos .photo__gallery .photo3 {
   grid-area: photo3;
-  background-image: url(../img/nuestros-trabajos/orig/ent.jpg);
-  height: 650px;
+  background-image: url(../img/nuestros-trabajos/ent-min.jpg);
+  height: 210px;
 }
 .content__nuestros-trabajos .photos .photo__gallery .photo4 {
   grid-area: photo4;
-  background-image: url(../img/nuestros-trabajos/orig/witcher-small.webp);
-  height: 300px;
+  background-image: url(../img/index/witcher-small-min.jpg);
+  height: 100px;
+  background-position: top;
 }
 .content__nuestros-trabajos .photos .photo__gallery .photo5 {
   grid-area: photo5;
-  background-image: url(../img/nuestros-trabajos/orig/oni-big.jpg);
-  height: 650px;
+  background-image: url(../img/nuestros-trabajos/oni-min.jpg);
+  height: 210px;
 }
 
 .intro-descubrir h2 {
@@ -569,7 +562,8 @@ footer .footer__social .bi {
 
 #carouselExampleCaptions {
   margin: 0 auto;
-  padding: 10%;
+  margin: 5% 15%;
+  padding: 0 10%;
 }
 
 /*----------------CONTACTO----------------*/
@@ -580,7 +574,7 @@ footer .footer__social .bi {
   padding: 2rem;
 }
 #form__contact .contact__bg__L {
-  background-image: url(../img/contact-bg-L.png);
+  background-image: url(../img/contacto/contact-bg-L-min.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -611,6 +605,16 @@ footer .footer__social .bi {
 }
 
 /*----------------MEDIA----------------*/
+/*--576px--*/
+@media (min-width: 576px) {
+  /*Galeria Nuestros trabajos*/
+  .content__nuestros-trabajos .photos .photo__gallery .photo1, .content__nuestros-trabajos .photos .photo__gallery .photo3, .content__nuestros-trabajos .photos .photo__gallery .photo5 {
+    height: 420px;
+  }
+  .content__nuestros-trabajos .photos .photo__gallery .photo2, .content__nuestros-trabajos .photos .photo__gallery .photo4 {
+    height: 200px;
+  }
+}
 /*--992px--*/
 @media (max-width: 992px) {
   /*--SIDE MENU--*/
@@ -647,6 +651,9 @@ footer .footer__social .bi {
     color: #ffffff;
     background-image: radial-gradient(rgba(138, 95, 197, 0.8274509804) 20%, #1c1b21 60%);
   }
+  .navbar .collapse .d-flex {
+    margin: 0;
+  }
   /*BANNER*/
   .banner__home {
     height: 200px;
@@ -681,7 +688,7 @@ footer .footer__social .bi {
   }
   /*CONTACT*/
   .contact__bg__R {
-    background-image: url(../img/contact-bg-R.png);
+    background-image: url(../img/contacto/contact-bg-R-min.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -700,6 +707,9 @@ footer .footer__social .bi {
   .navbar .navbar-nav .dropdown-menu {
     left: 24vw;
   }
+  .navbar .collapse .d-flex {
+    width: 30%;
+  }
   /*BANNER*/
   .banner__home {
     height: 225px;
@@ -707,6 +717,18 @@ footer .footer__social .bi {
   }
   .banner__home h1 {
     font-size: 3.5rem;
+  }
+  /*Galeria Nuestros trabajos*/
+  .content__nuestros-trabajos .photos .photo__gallery {
+    margin: 2rem;
+  }
+  .content__nuestros-trabajos .photos .photo__gallery .photo1, .content__nuestros-trabajos .photos .photo__gallery .photo3, .content__nuestros-trabajos .photos .photo__gallery .photo5 {
+    height: 640px;
+    background-size: contain;
+  }
+  .content__nuestros-trabajos .photos .photo__gallery .photo2, .content__nuestros-trabajos .photos .photo__gallery .photo4 {
+    height: 300px;
+    background-size: contain;
   }
 }
 /*--1400px--*/

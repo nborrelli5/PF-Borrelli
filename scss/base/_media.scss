@@ -1,4 +1,20 @@
 /*----------------MEDIA----------------*/
+/*--576px--*/
+@media (min-width:576px){
+/*Galeria Nuestros trabajos*/ 
+    .content__nuestros-trabajos{
+        .photos{
+            .photo__gallery{
+                .photo1,.photo3,.photo5{
+                    height: 420px;
+                }
+                .photo2,.photo4{
+                    height: 200px;
+                }
+            }   
+        }
+    }
+}
 /*--992px--*/
 @media (max-width:992px){
 /*--SIDE MENU--*/
@@ -35,8 +51,15 @@
                         color: $white;
                         background-image: radial-gradient($lilac 20%,$background-grey 60%);
                     }
-            }       
+                }
+            .collapse{
+                .d-flex{
+                    margin: 0;
+                }
+            }
+            
     }
+    
 /*BANNER*/
     .banner__home{
         height: 200px;
@@ -76,7 +99,7 @@
 }
 /*CONTACT*/
     .contact__bg__R{
-        background-image: url(../img/contact-bg-R.png);
+        background-image: url(../img/contacto/contact-bg-R-min.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position:center ;
@@ -97,7 +120,12 @@
                 .dropdown-menu{
                     left: 24vw;
                 }                   
-        }       
+        }
+        .collapse{
+            .d-flex{
+                width: 30%;
+            }
+        }          
     }
 /*BANNER*/
 .banner__home{
@@ -106,6 +134,22 @@
         h1{
             font-size: 3.5rem;
         }           
+    }
+    /*Galeria Nuestros trabajos*/ 
+    .content__nuestros-trabajos{
+        .photos{
+            .photo__gallery{
+                margin: 2rem;
+                .photo1,.photo3,.photo5{
+                    height: 640px;
+                    background-size:contain;
+                }
+                .photo2,.photo4{
+                    height: 300px;
+                    background-size:contain;
+                }
+            }   
+        }
     }
 }
 /*--1400px--*/
@@ -117,8 +161,9 @@
                 .dropdown-menu{
                     left: 15vw;
                 }                   
-        }       
+        }
     }
+
 /*BANNER*/
 .banner__home{
     height: 250px;

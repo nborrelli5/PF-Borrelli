@@ -31,39 +31,40 @@
                 "photo5 photo5 photo5 photo5"
                 "photo5 photo5 photo5 photo5";
                 margin: 0 1rem 1rem;
-                gap: 20px;
+                gap: 5px;
                 .photo1, .photo2, .photo3, .photo4, .photo5{
 
                     background-repeat:no-repeat;
-                    background-size:cover;
-                    background-position: center;
+                    background-size:100%;
+                    background-position:center;
+
                 }
                 .photo1{
                     grid-area: photo1;
-                    background-image: url(../img/nuestros-trabajos/orig/lotr2-big.webp);
-                    height: 650px;
-
+                    background-image: url(../img/nuestros-trabajos/lotr2-min.jpg);
+                    height:210px;
                 }
                 .photo2{
                     grid-area: photo2;
-                    background-image: url(../img/nuestros-trabajos/orig/gimli-medium.webp);               
-                    height: 300px;
+                    background-image: url(../img/index/gimli-medium-min.jpg);               
+                    height: 100px;
+                    background-position: bottom;
                 }
-
                 .photo3{
                     grid-area: photo3;
-                    background-image: url(../img/nuestros-trabajos/orig/ent.jpg);
-                    height: 650px;
+                    background-image: url(../img/nuestros-trabajos/ent-min.jpg);
+                    height: 210px;
                 }
                 .photo4{
                     grid-area: photo4;
-                    background-image: url(../img/nuestros-trabajos/orig/witcher-small.webp);
-                    height: 300px;
+                    background-image: url(../img/index/witcher-small-min.jpg);
+                    height: 100px;
+                    background-position: top;
                 }
                 .photo5{
                     grid-area: photo5;
-                    background-image: url(../img/nuestros-trabajos/orig/oni-big.jpg);
-                    height: 650px;
+                    background-image: url(../img/nuestros-trabajos/oni-min.jpg);
+                    height: 210px;
                 }        
             }       
         }
